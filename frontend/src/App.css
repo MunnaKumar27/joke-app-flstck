@@ -1,0 +1,106 @@
+/* App.css */
+
+/* General styles for the app */
+.app-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Header section with logo and navigation */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e3d49;
+  padding: 15px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.logo img {
+  width: 100px; /* Adjust logo size */
+  height: auto;
+}
+
+/* Navigation links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+/* Main header title */
+h1 {
+  color: #2e3d49;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+/* Paragraph for joke count */
+p {
+  font-size: 1.2rem;
+  color: #797979;
+}
+
+.idp{
+  color: rgb(193, 140, 140);
+  font-size: 10px;
+  
+}
+/* Styling for each joke container */
+.joke-container {
+  background-color: #ffffff;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Style for the joke title */
+h3 {
+  font-size: 1.5rem;
+  color: #4f8a8b;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #dfe2e5;
+}
+
+/* Spacing between jokes */
+.joke-container + .joke-container {
+  margin-top: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .joke-container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* Make the header more compact on small screens */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-links a {
+    margin: 5px 0;
+  }
+}
